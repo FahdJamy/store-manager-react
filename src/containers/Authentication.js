@@ -1,13 +1,13 @@
 import React, {Component} from 'react';
 
-class App extends Component {
+class Authentication extends Component {
     render () {
         return (
             <>
-                <p>Welcome to the store manager</p>
+                <p>User authentication class</p>
             </>
         )
     }
 }
 
-export default App;
+export default Authentication;
