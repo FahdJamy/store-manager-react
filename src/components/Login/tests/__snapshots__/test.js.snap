@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`tests LoginForm it should render without rashing 1`] = `ShallowWrapper {}`;
