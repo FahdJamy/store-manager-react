@@ -1,0 +1,17 @@
+.LoginFormStyle {
+    padding-top: 15%;
+    height: 100%;
+    width: 100%;
+}
+
+@media(max-width: 500px) {
+    .LoginFormStyle {
+        padding-top: 50%;
+    }
+}
+
+@media(max-width: 600px) {
+    .LoginFormStyle {
+        padding-top: 30%;
+    }
+}
