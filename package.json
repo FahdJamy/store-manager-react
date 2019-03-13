@@ -8,7 +8,8 @@
     "build": "webpack --mode production",
     "test": "jest",
     "test:watch": "jest --watch",
-    "test:coverage": "jest --coverage --colors"
+    "test:coverage": "jest --collectCoverage",
+    "coverage": "react-scripts test --env=jsdom --coverage --coveragePathIgnorePatterns=src/index.jsx --coveragePathIgnorePatterns=src/serviceWorker.js"
   },
   "keywords": [],
   "author": "Fahad A.J.",
