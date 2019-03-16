@@ -14,7 +14,7 @@ A store manager is an application that helps store owners (admins) track their s
 1. Clone the project using. Click this link [StoreManager](https://github.com/FahdJamy/store-manager-react.git)
 2. then run npm install or yarn install to install all the project dependencies.
 ## Deployed on Heroku. (Live Demo)
-Visit this link
+Visit this link [Store Manager Heroku](https://store-manager--react.herokuapp.com/)
 ## Implemented Pivotal Tracker Stories
 Visit this link [Store Manager Pivotal Tracker Board](https://www.pivotaltracker.com/n/projects/2315759)
 ## Functionality (What the project does right now.)
