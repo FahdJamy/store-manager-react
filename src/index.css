@@ -2,5 +2,11 @@ body {
     margin: 0;
     padding: 0;
     font-size: 1.2rem;
-    background-color: olivedrab;
+    background-image: url('https://images.pexels.com/photos/811107/pexels-photo-811107.jpeg?cs=srgb&dl=aisle-business-buy-811107.jpg&fm=jpg');
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+    width: 100%; 
 }

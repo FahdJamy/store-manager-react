@@ -1,0 +1,32 @@
+.card {
+    background: rgb(245, 248, 246) !important;
+    margin: 2% !important;
+    transition: all .4s !important;
+    border-radius: .5rem !important;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .70) !important;
+}
+ .card:hover,
+ .card:focus {
+    transform: translateY(5px) !important;
+	box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .5) !important;
+}
+
+@media (max-width: 1400px) {
+    .card {
+        margin: 1% !important;
+        width: 45% !important;
+    }
+}
+
+@media (max-width: 850px) {
+    .card {
+        margin: 3% !important;
+        width: 42% !important;
+    }
+}
+
+@media (max-width: 730px) {
+    .card {
+        width: 100% !important;
+    }
+}

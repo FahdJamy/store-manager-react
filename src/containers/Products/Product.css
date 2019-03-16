@@ -1,0 +1,10 @@
+.ProductsLoader {
+    background: #fff;
+    height: 100vh;
+    display: grid;
+    align-items: center;
+}
+
+.AllProducts {
+    height: 100vh;
+}
