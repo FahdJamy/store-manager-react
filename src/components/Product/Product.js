@@ -11,18 +11,8 @@ const product = (props) => (
             <Card.Description>Available stock is {props.stock}</Card.Description>
             <Card.Description>${props.productPrice}</Card.Description>
         </Card.Content>
-        <Card.Content extra>
-            <Grid columns={2}>
-                <Grid.Column>
-                    <Button color="blue" padded="very">Update</Button>
-                </Grid.Column>
-                <Grid.Column>
-                    <Button color="red" size="medium">Delete</Button>
-                </Grid.Column>
-            </Grid>
-        </Card.Content>
     </Card>
     
 )
 
-export default product
+export default product;

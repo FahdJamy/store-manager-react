@@ -1,2 +1,6 @@
-export { loginUser } from './auth';
+export {
+    loginUser,
+    registerUser,
+    autoLoginUser,
+    logoutUser } from './auth';
 export { getAllAvailableProducts } from './products';

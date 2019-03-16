@@ -23,21 +23,22 @@ export class Products extends Component {
         if (this.props.products !== null) {
             this.products = this.props.products.Products.map(product => {
                 return (
-                    <div className="AllProducts" key={product.id}>
-                        <Product 
+                        <Product
+                            key={product.id}
                             productName={product.product_name}
                             productPrice={product.price}
                             stock={product.stock}/>
-                    </div>
                 )
             })
         }
         return (
-            <Segment padded="very">
-                <Grid>
-                        {this.products}
-                </Grid> 
-            </Segment>
+            <div className="AllProducts" >
+                <Segment padded="very">
+                    <Grid>
+                            {this.products}
+                    </Grid> 
+                </Segment>
+            </div>
         )
     }
 }

@@ -4,6 +4,7 @@ import { Redirect }  from 'react-router-dom';
 
 import Login from '../../components/Login/Login';
 import * as actions from '../../store/actions/index';
+import './Login.css';
 
 export class Authentication extends Component {
 
@@ -56,7 +57,7 @@ export class Authentication extends Component {
         }
 
         return (
-            <>
+            <div className="Login">
                 {this.redirectHome}
                 <Login
                     disabled={!this.state.disabled}
@@ -66,7 +67,7 @@ export class Authentication extends Component {
                     errorMsg={this.errorMsg}
                     invalidForm={this.errorInform}
                     />
-            </>
+            </div>
         )
     }
 }

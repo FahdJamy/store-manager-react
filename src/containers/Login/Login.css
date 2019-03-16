@@ -1,8 +1,5 @@
-body {
-    margin: 0;
-    padding: 0;
-    font-size: 1.2rem;
-    background: rgb(119, 119, 99);
+.Login {
+    background-image: url('https://images.pexels.com/photos/1002740/pexels-photo-1002740.jpeg?cs=srgb&dl=bar-cafe-caffeine-1002740.jpg&fm=jpg');
     background-repeat: no-repeat; 
     background-position: center;
     background-attachment: fixed;

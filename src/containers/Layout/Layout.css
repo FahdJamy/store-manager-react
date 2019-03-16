@@ -1,4 +1,6 @@
 .Layout {
-    background: rgb(211, 187, 156);
-    /* background-color: antiquewhite; */
+    /* height: 1200px; */
+}
+.active {
+    color: black;
 }
