@@ -10,7 +10,7 @@
     "test:watch": "jest --watch",
     "test:coverage": "jest --collectCoverage",
     "coverage": "jest --collectCoverage",
-    "heroku-prebuild": "npm i yarn; yarn install",
+    "heroku-prebuild": "npm install",
     "heroku-postbuild": "yarn build"
   },
   "keywords": [],
