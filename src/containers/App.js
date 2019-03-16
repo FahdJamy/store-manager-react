@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
-import { Route, Switch } from 'react-router-dom';
+import { Route, Switch, BrowserRouter as Router, withRouter } from 'react-router-dom';
 
 import Login from './Login/Login';
 import Products from './Products/Products';
-
+import Layout from './Layout/Layout';
 
 class App extends Component {
     render () {
@@ -11,11 +11,13 @@ class App extends Component {
             <>
                 <Switch>
                     <Route path="/" exact component={Login} />
-                    <Route path="/home" exact component={Products} />
+                    <Layout >
+                        <Route path="/home" exact component={Products} />
+                    </Layout>
                 </Switch>
             </>
         )
     }
 }
 
-export default App;
+export default withRouter(App);

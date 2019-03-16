@@ -5,7 +5,7 @@ import { Redirect }  from 'react-router-dom';
 import Login from '../../components/Login/Login';
 import * as actions from '../../store/actions/index';
 
-class Authentication extends Component {
+export class Authentication extends Component {
 
     state = {
         disabled: false,
@@ -44,34 +44,34 @@ class Authentication extends Component {
     }
     
     render () {
-        let redirectHome = null
-        let errorMsg = null
-        let errorInform = false
+        this.redirectHome = null
+        this.errorMsg = null
+        this.errorInform = false
 
         if (this.props.isAuthenticated) {
-            redirectHome = (<Redirect to="/home"/>)
+            this.redirectHome = (<Redirect to="/home"/>)
         } else if (this.props.error !== null) {
-            errorMsg = this.props.error.message
-            errorInform = true
+            this.errorMsg = this.props.error.message
+            this.errorInform = true
         }
 
         return (
             <>
-                {redirectHome}
+                {this.redirectHome}
                 <Login
                     disabled={!this.state.disabled}
                     inputChanged={ (e) => this.loginHandler(e, this.state.userInfo)}
                     onSubmit={this.submitDataHandler}
                     loading={this.props.loading}
-                    errorMsg={errorMsg}
-                    invalidForm={errorInform}
+                    errorMsg={this.errorMsg}
+                    invalidForm={this.errorInform}
                     />
             </>
         )
     }
 }
 
-const mapStateToProps = (state) => {
+export const mapStateToProps = (state) => {
     return {
         loading: state.user.loading,
         isAuthenticated: state.user.isAuthenticated,
@@ -79,7 +79,7 @@ const mapStateToProps = (state) => {
     }
 }
 
-const mapDispatchToProps = (dispatch) => {
+export const mapDispatchToProps = (dispatch) => {
     return { 
         onLoginUser: (userLoginInfo) => dispatch(actions.loginUser(userLoginInfo))
     }

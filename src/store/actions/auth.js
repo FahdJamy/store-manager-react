@@ -1,6 +1,6 @@
 import * as actionTypes from './actionsTypes';
 
-import axios from '../../utils/axios';
+import axios from 'axios';
 
 export const startLoginUser = () => {
     return {
@@ -23,14 +23,13 @@ export const userLoginFail = (error) => {
 }
 
 export const loginUser = (userInfo) => {
-    return function (dispatch){
+    return async dispatch => {
         dispatch(startLoginUser())
-        axios.post('/auth/login', userInfo)
-            .then(response => {
-                dispatch (userLoginSuccess(response.data))
-            })
-            .catch(error => {
-                dispatch (userLoginFail(error.response.data))
-            });
+        try {
+            const response = await axios.post(actionTypes.BASE_URL + '/auth/login', userInfo);
+            dispatch (userLoginSuccess(response.data))
+        } catch (error) {
+            dispatch (userLoginFail(error.response.data))
+        }
     }
 }

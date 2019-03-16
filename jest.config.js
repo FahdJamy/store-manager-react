@@ -24,6 +24,9 @@ module.exports = {
 	// Indicates whether each individual test should be reported during the run
 	verbose: true,
 
+	//Files to ignore while collecting coverage
+	coveragePathIgnorePatterns: ['src/index.js', 'src/containers/App.js', 'src/store/reducers/index.js', ],
+
 	// Allows for css files to be loaded.
 	// Modification of rejected node module files.
 	"moduleNameMapper": {
