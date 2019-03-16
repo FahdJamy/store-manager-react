@@ -9,7 +9,9 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --collectCoverage",
-    "coverage": "jest --collectCoverage"
+    "coverage": "jest --collectCoverage",
+    "heroku-prebuild": "npm i yarn; yarn install",
+    "heroku-postbuild": "yarn build"
   },
   "keywords": [],
   "author": "Fahad A.J.",
