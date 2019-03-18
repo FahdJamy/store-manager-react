@@ -1,0 +1,10 @@
+.SignupForm {
+    height: 95vh;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.spaceComponents {
+    margin: 5%;
+}

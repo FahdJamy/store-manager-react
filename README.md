@@ -2,8 +2,8 @@
 A store manager is an application that helps store owners (admins) track their stock inventory
 
 [![Build Status](https://travis-ci.org/FahdJamy/store-manager-react.svg?branch=develop)](https://travis-ci.org/FahdJamy/store-manager-react)
-[![Maintainability](https://api.codeclimate.com/v1/badges/86803cb26b7e64ff0a0a/maintainability)](https://codeclimate.com/github/FahdJamy/store-manager-react/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/86803cb26b7e64ff0a0a/test_coverage)](https://codeclimate.com/github/FahdJamy/store-manager-react/test_coverage)
+[![Heroku](http://heroku-badge.herokuapp.com/?app=angularjs-crypto&style=flat)](https://store-manager--react.herokuapp.com/)
 # The Project
 ## Dependencies.
 1. The project is developed using Javascript the React library

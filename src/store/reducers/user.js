@@ -4,7 +4,9 @@ const intialState = {
     user: null,
     isAuthenticated: false,
     loading: false,
-    error: null
+    error: null,
+    isAdmin: false,
+    token: null
 }
 
 const userReducer = (state = intialState, action) => {
@@ -14,7 +16,9 @@ const userReducer = (state = intialState, action) => {
                 ...state,
                 loading: true,
                 error: null,
-                isAuthenticated: false
+                isAuthenticated: false,
+                isAdmin: false,
+                token: null
             }
         case actionTypes.LOGIN_USER_SUCCESS:
             return {
@@ -27,7 +31,31 @@ const userReducer = (state = intialState, action) => {
             return {
                 ...state,
                 loading: false,
-                error: action.error
+                error: action.error,
+                isAdmin: false,
+                token: null
+            }
+        case actionTypes.USER_IS_ADMIN:
+            return {
+                ...state,
+                isAdmin: true
+            }
+        case actionTypes.LOGIN_USER_AGAIN:
+            return {
+                ...state,
+                isAuthenticated: true,
+                loading: false,
+                error: null,
+                token: action.token
+            }
+        case actionTypes.LOGOUT_USER:
+            return {
+                ...state,
+                loading: false,
+                error: null,
+                isAuthenticated: false,
+                isAdmin: false,
+                token: null
             }
         default:
             return state

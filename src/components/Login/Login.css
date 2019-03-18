@@ -1,7 +1,11 @@
 .LoginFormStyle {
-    padding-top: 15%;
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    transition: all .4s !important;
+    border-radius: 1rem !important;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .99) !important;
 }
 
 @media(max-width: 500px) {
