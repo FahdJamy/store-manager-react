@@ -16,7 +16,7 @@ export class Layout extends Component {
 	const { activeItem } = this.state
 
 	return (
-		<div className="Layout">
+		<div>
 			<Menu pointing secondary color="teal">
 				<NavLink to="/home">
 					<Menu.Item 

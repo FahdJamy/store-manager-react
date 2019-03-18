@@ -20,8 +20,8 @@ export class App extends Component {
         return (
             <>
                 <Switch>
-                    <Route path="/" exact component={Login} />
                     <Route path="/logout" exact component={Logout} />
+                    <Route path="/" exact component={Login} />
                     <Layout >
                         <Route path="/home" exact component={Products} />
                         <Route path="/register" component={Register} />

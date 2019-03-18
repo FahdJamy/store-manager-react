@@ -25,8 +25,7 @@ const userReducer = (state = intialState, action) => {
                 ...state,
                 loading: false,
                 user: action.data,
-                isAuthenticated: true,
-                isAdmin: false
+                isAuthenticated: true
             }
         case actionTypes.LOGIN_USER_FAIL:
             return {
@@ -50,7 +49,14 @@ const userReducer = (state = intialState, action) => {
                 token: action.token
             }
         case actionTypes.LOGOUT_USER:
-            return state
+            return {
+                ...state,
+                loading: false,
+                error: null,
+                isAuthenticated: false,
+                isAdmin: false,
+                token: null
+            }
         default:
             return state
     }

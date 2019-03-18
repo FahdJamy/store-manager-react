@@ -29,8 +29,8 @@ export const userIsAdmin = () => {
 };
 
 export const logoutUser = () => {
-    localStorage.removeItem("username")
-    localStorage.removeItem("token")
+    localStorage.removeItem('token');
+    localStorage.removeItem('username');
     return {
         type: actionTypes.LOGOUT_USER
     }
@@ -52,7 +52,7 @@ export const autoLoginUser = () => {
                 dispatch(userIsAdmin())
             }
             dispatch(loginUserAgain(token))
-        } else if (username === null && token === null) {
+        } else {
             dispatch(logoutUser())
         }
     }
