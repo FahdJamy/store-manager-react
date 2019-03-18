@@ -41,7 +41,7 @@ describe('<Authentication />', () => {
         expect(instance.state.userInfo.password).toEqual('123');
     })
 
-    it('should errorMsg in render method if error is not null', () => {
+    it('should update errorMsg value in render method if error is not null', () => {
         wrapper.setProps({ error: {message: "username is wrong"}});
         expect(instance.errorMsg).toEqual("username is wrong");
     });

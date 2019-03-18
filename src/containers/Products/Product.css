@@ -1,10 +1,11 @@
 .ProductsLoader {
-    background: #fff;
-    height: 100vh;
+    height: 92vh;
     display: grid;
     align-items: center;
+    background: rgb(207, 197, 177);
 }
 
 .AllProducts {
-    height: 100vh;
+    background: rgb(207, 197, 177);
+    height: 92vh;
 }

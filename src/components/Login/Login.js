@@ -7,8 +7,7 @@ const login = (props) => {
 
     return (
         <div className="LoginFormStyle">
-            <Grid columns={3} relaxed='very' stackable>
-                <Grid.Column></Grid.Column>
+            <Grid relaxed='very' stackable>
                 <Grid.Column>
                     <Segment padded='very' color='green'>
                         <Header as='h1' color='teal' textAlign='center'>
@@ -39,7 +38,6 @@ const login = (props) => {
                         </Form>
                     </Segment>
                 </Grid.Column>
-                <Grid.Column></Grid.Column>
             </Grid>
         </div>
     )
